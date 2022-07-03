@@ -1,0 +1,336 @@
+/* a section */
+
+a:link, a:visited, a:hover, a:active
+{
+	text-decoration: none;
+}
+
+a.nav-link
+{
+	font-family			:	'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color				:	azure;
+	display				:	block;
+	font-size			:	26px;
+	padding				:	8px;
+}
+
+a.nav-link:hover
+{
+	background-color	:	#e7e7e7;
+	border-radius		:	15px;
+}
+
+/* ul & li section */
+
+ul.navbar-nav
+{
+	list-style-type	:	none;
+	margin			:	0;
+	padding			:	0;
+	width			:	100%;
+	height			:	100%;
+}
+
+li.nav-item, li.navbar-logo, li.linkedin
+{
+	text-align		:	center;
+	display			:	inline-block;
+	overflow		:	hidden;
+}
+
+li.nav-item:last-child
+{
+	width: auto;
+	padding-left: 99px;
+}
+
+li.nav-item
+{
+	width			:	13%;
+	border-radius	:	5px;
+	padding-top		:	12.5px;
+}
+
+li.navbar-logo
+{
+	width: 25%;
+}
+
+/* div section */
+
+header
+{
+	background: #f1f1f1;
+	background: linear-gradient(90deg, rgb(133, 133, 133) 0%, rgba(13, 49, 37, 0.827) 40%, rgb(142, 188, 197) 100%);
+}
+
+.navbar, #navbar
+{
+	width	:	100%;
+	height	:	75px;
+	padding	:	0;
+	margin	:	0;
+}
+
+div.container-fluid
+{
+	vertical-align	:	middle;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+/* img section */
+
+img#logo
+{
+	padding-top	:	10px;
+	height		:	70px;
+}
+
+img#linkedin
+{
+	width		:	60px;
+}
+
+img#carousel-control
+{
+	width		:	39px;
+}
+
+img#quarenteDeux, img#scratch
+{
+	display			:	flex;
+	width			:	100%;
+	border-radius	:	5px;
+}
+
+.img-project:hover
+{
+	border-radius: 0px;
+}
+
+/* header section */
+
+h1
+{
+	font-size	:	33px;
+	text-align	:	center;
+	color		:	rgb(79, 125, 179);
+}
+
+/* carousel section */
+
+div.carousel
+{
+	position			:	relative;
+	width				:	100%;
+	height				:	500px;
+	margin				:	0 auto;
+}
+
+.track-container
+{
+	position			:	relative;
+	overflow			:	hidden;
+	height				:	100%;
+}
+
+/* div
+{
+	border: solid 1px;
+} */
+
+.carousel-track
+{
+	transition			:	transform 250ms ease-in;
+	list-style			:	none;
+	position			:	relative;
+	padding				:	0;
+	height				:	100%;
+	margin				:	0;
+}
+
+.carousel_image
+{
+	object-fit			:	cover;
+	height				:	100%;
+	width				:	100%;
+}
+
+.carousel-item
+{
+	position			:	absolute;
+	bottom				:	0;
+	width				:	100%;
+	top					:	0;
+}
+
+.carousel-control--prev, .carousel-control--next
+{
+	position			:	absolute;
+	cursor				:	pointer;
+	border				:	0;
+	transform			:	translateY(-50%);
+	background			:	transparent;
+	height				:	100%;
+	width				:	20%;
+	top					:	50%;
+}
+
+.carousel-control--prev
+{
+	text-align			:	left;
+	left				:	30px;
+	z-index				:	1;
+}
+
+.carousel-control--next
+{
+	text-align			:	right;
+	right				:	30px;
+}
+
+.carousel-navDots
+{
+	justify-content		:	center;
+	display				:	flex;
+	padding				:	10px 0;
+}
+
+.carousel-indicator
+{
+	background			:	rgba(176, 176, 176, 0.45);
+	border-radius		:	3px;
+	cursor				:	pointer;
+	border				:	0;
+	height				:	6px;
+	margin				:	0 22px;
+	width				:	75px;
+}
+
+.carousel-indicator.active
+{
+	background			:	rgba(118, 117, 117, 0.75);
+}
+
+.is-hidden
+{
+	display				:	none;
+}
+
+section.project-container
+{
+	height: 800px;
+	width: 100%;
+
+}
+
+.main-container
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.sub-container
+{
+	padding				:	6px 6px 6px 6px;
+	position			:	relative;
+	width				:	50%;
+	height				:	50%;
+	display				:	flex;
+}
+
+.sub-container:hover
+{
+	opacity				:	59%;
+	padding				:	0;
+	transition			:	transform 250ms ease-in;
+}
+
+.first-project, .third-project
+{
+	float				:	left;
+	/* background-color	: bisque; */
+}
+
+.second-project, .fourth-project
+{
+	float				:	right;
+	/* background-color: blanchedalmond; */
+}
+
+#animation1 , #animation2 {
+    width: 85%;
+    height: 50%;
+    position: relative;    
+}
+
+#animation1 {
+    background: url(http://lorempixel.com/100/100);
+}
+#animation2 {
+    background: url(http://lorempixel.com/100/100/sports/);
+}
+
+/* animation classes */
+
+.hide
+{
+	display: none;
+	/* padding: 100%; */
+}
+
+.opacity-animation
+{
+	-webkit-transition: opacity 1.5s ease-in-out;
+    -moz-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.mymove-animation {
+    -webkit-animation: mymove 2s;  /* Chrome, Safari, Opera */
+    -webkit-animation-iteration-count: 1;  /* Chrome, Safari, Opera */
+    -webkit-animation-fill-mode: forwards;  /* Chrome, Safari, Opera */
+	animation: mymove 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+/* animation classes end */
+
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes opacity
+{
+    from { opacity: .5; }
+    to { opacity: 1; }
+}
+
+/* Other browsers */
+@keyframes opacity
+{
+    from { opacity: .5; }
+    to { opacity: 1; }
+}
+
+@-webkit-keyframes mymove
+{
+    from { right: -200px; }
+    to { right: -5%; }
+}
+
+/* Other browsers */
+@keyframes mymove
+{
+    from { right: -200px; }
+    to { right: -5%; }
+}
+
+.about_section
+{
+	width: 100%;
+	position: relative;
+	padding-top: 26px;
+}
